@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Poiret+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Armata&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="js/script.js"></script>
+        <link rel="icon" href="images/favicon.png.png" type="image/x-icon">
+        <title>NorthernEscapes</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href='index.html'>HOME</a></li>
+                <li><a href='about.html'>ABOUT</a></li>
+                <li><a href='contact.html'>CONTACT</a></li>
+            </ul>
+            <ul>
+                <li class="nav-logo">NorthernEscapes</li>
+                <li class="hideOnMobile"><a href='index.html'>HOME</a></li>
+                <li class="hideOnMobile"><a href='about.html'>ABOUT</a></li>
+                <li class="hideOnMobile"><a href='contact.html'>CONTACT</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </ul>
+        </nav>
+        <main class="home-section">
+            <video class="video-background" autoplay loop muted>
+                <source src="images/real.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+            <div class="initial-content">
+                <h1>Northern Escapes</h1>
+                <p>DISCOVER  BEAUTY  BEYOND  THE  HORIZON</p>
+                <a href="#travelsection" class="scroll-down">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </main>
+        <section class="travel-section" id="travelsection">
+            <div class="travel-cards">
+                <div class="card">
+                    <img src="images/isleofskyescotland.png" alt="Place 1">
+                    <div class="card-content">
+                        <h2>Isle of Skye, Scotland</h2>
+                        <p>Wander through rugged landscapes and magical landmarks.</p>
+                        <a href="#" class="read-more" onclick="openModal('modal1')">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/swissalps.jpg" alt="Place 2">
+                    <div class="card-content">
+                        <h2>Alps,<br>Switzerland</h2>
+                        <p>Immerse yourself in alpine peaks and serene beauty.</p>
+                        <a href="#" class="read-more" onclick="openModal('modal2')">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/tromsonorway.jpg" alt="Place 3">
+                    <div class="card-content">
+                        <h2>Tromsø, <br>Norway</h2>
+                        <p>Witness Arctic wonders and the dazzling Northern Lights.</p>
+                        <a href="#" class="read-more" onclick="openModal('modal3')">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h2>Isle of Skye, Scotland</h2>
+                    <img src="images/isleofskyescotland.png" alt="Isle of Skye">
+                    <p>The Isle of Skye, located on Scotland's west coast, is a destination of unparalleled natural beauty and mystical charm. Known for its rugged landscapes and dramatic seascapes, it offers a perfect blend of adventure and tranquility. Visitors are drawn to iconic landmarks such as the Old Man of Storr, a towering rock formation surrounded by sweeping views, and the Fairy Pools, crystal-clear waterfalls nestled at the foot of the Cuillin Mountains. The island's picturesque villages, like Portree with its colorful harbor, provide a cozy base to explore the breathtaking wilderness. Skye's rich history, from ancient castles like Dunvegan to its deep-rooted Gaelic culture, adds a touch of timeless allure, making it a must-visit for nature enthusiasts and history lovers alike.</p>
+                </div>
+            </div>            
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <h2>Alps, Switzerland</h2>
+                    <img src="images/swissalps.jpg" alt="Alps">
+                    <p>The Swiss Alps, a breathtaking alpine paradise, captivate travelers with their snow-capped peaks, pristine valleys, and serene glacial lakes. Renowned for world-class skiing and hiking, the region offers unforgettable adventures amid stunning natural beauty. Visitors can explore charming mountain villages like Zermatt, home to the iconic Matterhorn, or take scenic train journeys through lush meadows and dramatic landscapes. Beyond the outdoor activities, the Alps provide a tranquil escape, with opportunities to unwind in cozy chalets and savor traditional Swiss cuisine. Whether you're seeking adventure or serenity, the Swiss Alps promise an experience of unparalleled wonder.</p>
+                </div>
+            </div>           
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <h2>Tromso, Norway</h2>
+                    <img src="images/tromsonorway.jpg" alt="Tromso">
+                    <p>Tromsø, often called the "Gateway to the Arctic," is a vibrant city in northern Norway renowned for its stunning natural beauty and unique cultural experiences. Surrounded by snow-capped mountains and icy fjords, it’s a prime destination for witnessing the magical Northern Lights during winter or the Midnight Sun in summer. Tromsø offers activities like dog sledding, whale watching, and hiking, while its rich history and Arctic culture are celebrated in attractions like the Polar Museum and the Arctic Cathedral. With a blend of adventure, scenic splendor, and charm, Tromsø is a captivating Arctic escape.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Northern Escapes. All rights reserved. - Submitted by Franco Dimalanta CS101</p>
+                <ul class="footer-links">
+                    <li><a href="https://www.facebook.com/ry.comet" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.youtube.com/@cometryoko" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/ry.comet/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.discord.com" target="_blank"><i class="fab fa-discord"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
